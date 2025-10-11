@@ -1,0 +1,81 @@
+/* ==UserStyle==
+@name           cyberpunk_chatgpt
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A Cyberpunk Aesthetic for ChatGPT
+@author         Abhishek Paul
+==/UserStyle== */
+@-moz-document domain("chatgpt.com") {
+    @import url('https://fonts.googleapis.com/css2?family=Anta&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+    :root{
+        --neon-yellow: #ffff33;
+        --cyan: #00ffff;
+        --cyber-magenta: #fa73fa;
+        --pastel-scarlet: #FF4C64;
+        --neon-fuchsia: rgb(217,70,239);
+        --violet-crush: rgb(140,100,220);
+        --infrared-pink: rgb(255,32,121);
+        --hollywood-cerise:   #ff007b;
+        --electric-indigo:    #7e0eff;
+        --vivid-azure:        #008cff;
+        --ultra-pink:         #ff63ae;
+        --medium-orchid:      #b574ff;
+        --picton-blue:        #45abff;
+    }
+    body, html {
+        background-color: #0f001a !important;
+        color: var(--hollywood-cerise) !important;
+        font-family: 'Jetbrains Mono' !important;
+    }
+    .dark{
+        --bg-primary: #0f001a !important;
+        --text-primary: #ffcaf0 !important;
+    }
+    .light{
+        --bg-primary: #0f001a !important;
+        --text-primary: #ffcaf0 !important;
+    }
+    .overflow-auto, .overflow-scroll, .overflow-x-auto, .overflow-x-scroll, .overflow-y-auto, .overflow-y-scroll{
+        scrollbar-color: var(--hollywood-cerise) transparent !important;
+    }
+    .btn-primary {
+        background-color: var(--electric-indigo);
+        color: #fff !important;
+        clip-path: polygon(25% 0%, 100% 0, 100% 50%, 75% 100%, 0 100%, 0% 50%) !important;
+        border-radius: 0 !important;
+    }
+    .user-message-bubble-color,
+    .dark\:bg-\[\#303030\]:is(.dark *),
+    .light\:bg-\[\#303030\]:is(.light *),
+    .btn-secondary,
+    .btn-primary {
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+    }
+    .btn-primary:hover {
+        border: 1px solid cyan !important;
+    }
+    .user-message-bubble-color {
+        border-radius: 0 !important;
+        border: 1px solid var(--electric-indigo) !important;
+        background: #7e0eff1a !important;
+    }
+    .dark\:bg-\[\#303030\]:is(.dark *) {
+        border-radius: 0 !important;
+        border: 1px solid #ff007b !important;
+        background-color: #ff007b4a !important;
+    }
+    .light\:bg-\[\#303030\]:is(.light *) {
+        border-radius: 0 !important;
+        border: 1px solid #ff007b !important;
+        background-color: #ff007b4a !important;
+    }
+    .btn-secondary{
+        border-radius: 0 !important;
+        border: 1px solid #ff007b !important;
+        background-color: #ff007b4a !important;
+    }
+    .btn-secondary:hover{
+        filter: drop-shadow(0 0 10px #ff007b) !important;
+    }
+}
