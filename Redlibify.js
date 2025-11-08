@@ -1,0 +1,1 @@
+javascript:(function(){let path=window.location.href.toString().split(window.location.host)[1]; window.location.href="http://url_to_self-hosted_redlib_server/"+path;})();
